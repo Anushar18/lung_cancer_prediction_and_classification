@@ -89,7 +89,7 @@ def loginuser():
             cursor.close()
             session['email']=email
             session['loginSts']=True
-            return redirect(url_for('portal'))
+            return redirect(url_for('portal.html'))
     else:
         flash("Invalid Credentials")
         return redirect(url_for('login'))
